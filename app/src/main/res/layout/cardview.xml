@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_id"
+    android:layout_width="170dp"
+    android:layout_height="180dp"
+    android:orientation="horizontal"
+    android:layout_margin="20dp"
+
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    cardview:cardCornerRadius="4dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/personimg"
+            android:layout_width="170dp"
+            android:layout_height="180dp"
+            android:background="#000000"
+            android:scaleType="fitXY" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

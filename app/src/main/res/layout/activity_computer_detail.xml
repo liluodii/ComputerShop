@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComputerDetail">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"
+
+    >
+
+    <TextView
+        android:id="@+id/txtdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:textColor="	#000000"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="10dp"
+        android:text="Dell Inspiron 15 3000 (AMD) Laptop 15.6- inch - 4GB - 500GB - Windows 10 Home - ni153595_sb_h252e">
+
+    </TextView>
+    <TextView
+        android:id="@+id/txtmodel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtdescription"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="20dp"
+        android:text="Dell Inspiron 15 3000">
+
+    </TextView>
+    <ImageView
+        android:id="@+id/imgcmp"
+        android:layout_width="200dp"
+        android:layout_marginLeft="90dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/txtmodel"
+        android:paddingBottom="20dp"
+        android:layout_height="200dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/txtprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgcmp"
+        android:paddingBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35dp"
+        android:textColor="#DC143C"
+        android:text="$899.99">
+    </TextView>
+    <TextView
+        android:id="@+id/txtspecification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtprice"
+        android:paddingBottom="30dp"
+        android:textSize="30dp"
+        android:textColor="	#000000"
+        android:layout_marginLeft="10dp"
+        android:text="SPECIFICATIONS">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imgstar"
+        android:layout_width="127dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/imgcmp"
+        android:layout_marginLeft="250dp"
+
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/star4">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/txtrating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgstar"
+        android:layout_marginLeft="270dp"
+        android:paddingTop="5dp"
+        android:textColor="	#0000CD"
+        android:textSize="20dp"
+        android:text="4.9(1550)">
+    </TextView>
+    <Space
+        android:id="@+id/spacer"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txtdisplay"
+        android:layout_height="50dp"/>
+    <Space
+        android:id="@+id/spacer1"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txtmemory"
+        android:layout_height="30dp"/>
+    <TextView
+        android:id="@+id/txtdisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtspecification"
+        android:textSize="12dp"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginLeft="10dp"
+        android:text="Display">
+    </TextView>
+    <TextView
+        android:id="@+id/txtdisplaydata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:layout_below="@id/txtspecification"
+        android:layout_marginLeft="120dp"
+        android:textSize="12dp"
+
+        android:text="Displaydata">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtmemory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spacer"
+        android:textSize="12dp"
+        android:fontFamily="@font/aclonica"
+android:layout_marginLeft="10dp"
+        android:text="Memory">
+    </TextView>
+    <TextView
+        android:id="@+id/txtmemorydata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spacer"
+        android:textSize="12dp"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginLeft="120dp"
+
+        android:text="MemoryData"/>
+    <TextView
+        android:id="@+id/txtosdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spacer1"
+        android:textSize="12dp"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginLeft="120dp"
+
+        android:text="OS data"/>
+
+    <TextView
+        android:id="@+id/txtos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spacer1"
+        android:textSize="12dp"
+android:layout_marginLeft="10dp"
+        android:fontFamily="@font/aclonica"
+        android:text="OS"/>
+    <Space
+        android:id="@+id/spacer2"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txtos"
+        android:layout_height="30dp"/>
+    <TextView
+        android:id="@+id/txtvideocarddata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spacer2"
+        android:textSize="12dp"
+        android:layout_marginLeft="120dp"
+        android:fontFamily="@font/aclonica"
+
+        android:text="OS Videocarddata"/>
+    <TextView
+        android:id="@+id/txtvideocard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spacer2"
+        android:textSize="12dp"
+        android:fontFamily="@font/aclonica"
+android:layout_marginLeft="10dp"
+        android:text="Videocard"/>
+    <Space
+        android:id="@+id/spacer4"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txtvideocard"
+        android:layout_height="30dp"/>
+    <TextView
+        android:id="@+id/txtwireless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spacer4"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/aclonica"
+        android:textSize="12dp"
+
+        android:text="Wireless"/>
+    <Space
+        android:id="@+id/spacer6"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txtwireless"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/txtwirelessdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spacer4"
+        android:textSize="12dp"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginLeft="120dp"
+
+        android:text="Wirelessdata"/>
+
+    <TextView
+        android:id="@+id/txtkeyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/aclonica"
+        android:layout_below="@id/spacer6"
+        android:textSize="12dp"
+        android:text="keyboard">
+
+    </TextView>
+    <Space
+        android:id="@+id/spacer5"
+        android:layout_width="match_parent"
+        android:layout_below="@id/spacer5"
+        android:layout_height="30dp"/>
+
+
+    <TextView
+        android:id="@+id/txtkeyboarddata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spacer6"
+        android:textSize="12dp"
+        android:layout_marginLeft="120dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Keyboarddata"/>
+    <Space
+        android:id="@+id/spacer7"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txtkeyboard"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/txtmouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spacer7"
+        android:layout_marginLeft="10dp"
+        android:textSize="12dp"
+android:fontFamily="@font/aclonica"
+        android:text="Mouse"/>
+
+    <TextView
+        android:id="@+id/txtmousedata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spacer7"
+        android:textSize="12dp"
+        android:layout_marginLeft="120dp"
+android:fontFamily="@font/aclonica"
+        android:text="Mousedata"/>
+    <Space
+        android:id="@+id/spacer8"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txtmouse"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/txtharddrive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spacer8"
+        android:layout_marginLeft="10dp"
+        android:textSize="12dp"
+android:fontFamily="@font/aclonica"
+        android:text="Harddrive"/>
+
+    <TextView
+        android:id="@+id/txtharddrivedata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spacer8"
+        android:textSize="12dp"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginLeft="120dp"
+        android:text="HarddriveData"/>
+    <Space
+        android:id="@+id/spacer9"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txtharddrive"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/buttonbuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spacer9"
+        android:textSize="25dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/mybutton"
+        android:text="Buy"
+        android:fontFamily="@font/black_ops_one"
+        >
+
+    </Button>
+
+</RelativeLayout>
+
+
+
+
+</ScrollView>

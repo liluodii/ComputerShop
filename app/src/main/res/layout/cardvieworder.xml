@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardvieworder"
+    android:layout_margin="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgorder"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="20dp"
+                >
+
+            </ImageView>
+            <TextView
+                android:id="@+id/txtorderitemname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="10dp"
+                android:text="Itemname"
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/txtorderitemprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="#DC143C"
+                android:layout_below="@+id/txtorderitemname"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="20dp"
+                android:text="Price"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtorderid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_below="@+id/txtorderitemprice"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="20dp"
+                android:text="Order ID"
+                >
+            </TextView>
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+

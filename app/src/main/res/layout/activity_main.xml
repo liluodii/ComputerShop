@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgviewlogin"
+        android:textAlignment="center"
+        android:text="Log In"
+        android:layout_marginTop="25dp"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        app:fontFamily="@font/black_ops_one" />
+
+    <ImageView
+        android:id="@+id/imgviewlogin"
+        android:layout_width="286dp"
+        android:layout_height="119dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/comploogo" />
+
+    <EditText
+        android:id="@+id/edt_logemail"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtlogin"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="40dp"
+        android:hint="Enter Email Address"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edt_logpasswrod"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="68dp"
+        android:hint="Enter Password"
+        android:layout_marginTop="30dp"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_below="@id/edt_logemail"
+         />
+
+    <TextView
+        android:id="@+id/txt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="175dp"
+        android:text="register"
+        android:textColor="#E0481C"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtmsg"
+         />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="130dp"
+        android:background="@drawable/mybutton"
+        android:fontFamily="@font/black_ops_one"
+        android:text="Login"
+        android:textSize="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/edt_logpasswrod"
+        app:layout_constraintTop_toBottomOf="@+id/edt_logpasswrod"
+        />
+
+
+    <ImageView
+        android:id="@+id/imgemail"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/txtlogin"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        app:srcCompat="@drawable/email" />
+
+    <ImageView
+        android:id="@+id/imgpassword"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/imgemail"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        app:srcCompat="@drawable/passwordc" />
+
+    <TextView
+        android:id="@+id/txtmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginLeft="126dp"
+      android:layout_marginTop="30dp"
+        android:text="Don't have account ?"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

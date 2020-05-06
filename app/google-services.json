@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "198902817584",
+    "firebase_url": "https://fir-data-cc24c.firebaseio.com",
+    "project_id": "fir-data-cc24c",
+    "storage_bucket": "fir-data-cc24c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198902817584:android:4f41c1f39d640103b35ef5",
+        "android_client_info": {
+          "package_name": "com.example.computershop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198902817584-vs0ri9umsp2v57m77kh70vq61ibpfl3v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.computershop",
+            "certificate_hash": "7a93de153550f58632aa7b380054f06fc28726a8"
+          }
+        },
+        {
+          "client_id": "198902817584-8qqnsvmn2br2qavns9kjn3oqrbsoukc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKargRq3oUL60uNId3Vl_29hJMsdREbTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198902817584-8qqnsvmn2br2qavns9kjn3oqrbsoukc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198902817584:android:8c01202b83482ab3b35ef5",
+        "android_client_info": {
+          "package_name": "com.example.firebasedata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198902817584-mfnmm2ehlb8vmq2u5mhpa7odvbaknq9g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebasedata",
+            "certificate_hash": "173bf103a3ce966612f9911f9a752fe6726c8649"
+          }
+        },
+        {
+          "client_id": "198902817584-8qqnsvmn2br2qavns9kjn3oqrbsoukc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKargRq3oUL60uNId3Vl_29hJMsdREbTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198902817584-8qqnsvmn2br2qavns9kjn3oqrbsoukc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198902817584:android:f398fc1524c7267bb35ef5",
+        "android_client_info": {
+          "package_name": "com.example.firebaselogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198902817584-cocl1nr0er4ufr13ejcug7ci6s8qphnq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebaselogin",
+            "certificate_hash": "7a93de153550f58632aa7b380054f06fc28726a8"
+          }
+        },
+        {
+          "client_id": "198902817584-8qqnsvmn2br2qavns9kjn3oqrbsoukc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKargRq3oUL60uNId3Vl_29hJMsdREbTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198902817584-8qqnsvmn2br2qavns9kjn3oqrbsoukc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198902817584:android:ca41ad830310ef2eb35ef5",
+        "android_client_info": {
+          "package_name": "com.example.prhotelbooking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198902817584-1gu12i0fmrh23rs2b23a0ivgmn4m9ur9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.prhotelbooking",
+            "certificate_hash": "7a93de153550f58632aa7b380054f06fc28726a8"
+          }
+        },
+        {
+          "client_id": "198902817584-8qqnsvmn2br2qavns9kjn3oqrbsoukc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKargRq3oUL60uNId3Vl_29hJMsdREbTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198902817584-8qqnsvmn2br2qavns9kjn3oqrbsoukc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

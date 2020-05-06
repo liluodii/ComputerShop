@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccessoriesDetail">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints"
+    >
+
+
+    <TextView
+        android:id="@+id/txtdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+
+        android:text="Dell Inspiron 15 3000 (AMD) Laptop 15.6- inch - 4GB - 500GB - Windows 10 Home - ni153595_sb_h252e">
+
+    </TextView>
+    <TextView
+        android:id="@+id/txtmodel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtdescription"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Dell Inspiron 15 3000">
+
+    </TextView>
+    <ImageView
+        android:id="@+id/imgcmp"
+        android:layout_width="200dp"
+        android:layout_marginLeft="90dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/txtmodel"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_height="200dp">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/txtprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgcmp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#DC143C"
+        android:textSize="35dp"
+        android:text="$899.99">
+    </TextView>
+    <ImageView
+        android:id="@+id/imgstar"
+        android:layout_width="127dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/imgcmp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/star4">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/txtrating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgstar"
+        android:layout_marginLeft="270dp"
+        android:textSize="20dp"
+        android:textColor="	#0000CD"
+        android:text="4.9(1550)">
+    </TextView>
+    <TextView
+        android:id="@+id/txtspecification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtprice"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:text="SPECIFICATIONS">
+    </TextView>
+    <TextView
+        android:id="@+id/txtconn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtspecification"
+        android:textSize="15dp"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="Connectivity">
+    </TextView>
+    <TextView
+        android:id="@+id/txtconnectivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtspecification"
+        android:layout_marginLeft="140dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/aclonica"
+android:layout_marginTop="30dp"
+        android:text="Connectivitydata">
+    </TextView>
+    <TextView
+        android:id="@+id/txtcomp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtconn"
+        android:textSize="15dp"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="Compatibility">
+    </TextView>
+    <TextView
+        android:id="@+id/txtcompatibility"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtconn"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="140dp"
+        android:fontFamily="@font/aclonica"
+
+        android:text="Compatibilitydata"/>
+
+    <TextView
+        android:id="@+id/txtcolordata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtcomp"
+        android:textSize="15dp"
+        android:layout_marginLeft="140dp"
+        android:fontFamily="@font/aclonica"
+android:layout_marginTop="30dp"
+        android:text="colordata"/>
+
+    <TextView
+        android:id="@+id/txtcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtcomp"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Color"/>
+    <Button
+        android:id="@+id/buttonbuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/txtcolor"
+        android:textSize="25dp"
+        android:text="Buy"
+        android:background="@drawable/mybutton"
+        android:fontFamily="@font/black_ops_one"
+        >
+
+    </Button>
+</RelativeLayout>
+</ScrollView>
