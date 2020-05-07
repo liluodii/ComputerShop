@@ -10,11 +10,14 @@ public class DesktopRepo {
     private List<ComputerTypeData> Apple=new ArrayList<>();
     private List<ComputerTypeData> HP=new ArrayList<>();
     private List<ComputerTypeData> Lenovo=new ArrayList<>();
+    private List<ComputerTypeData> Acer=new ArrayList<>();
     //---------------------------------------Laptop Array list--------------------------------------------------------------
     private List<ComputerTypeData> Applelaptop=new ArrayList<>();
     private List<ComputerTypeData> Delllaptop=new ArrayList<>();
     private List<ComputerTypeData> HPlaptop=new ArrayList<>();
     private List<ComputerTypeData> Lenovolaptop=new ArrayList<>();
+    private List<ComputerTypeData> Acerlaptop=new ArrayList<>();
+
 
 
     private DesktopRepo() //constructor
@@ -115,6 +118,32 @@ public class DesktopRepo {
                 "Intel® 9560 802.11AC vPro™ (2 x 2) & Bluetooth® 5.0","Backlit - US English","N/A",
                 "512 GB PCIe SSD",R.drawable.lenovolap2,R.drawable.star5));
 
+
+        //-----------------------------------Acer Desktop Data---------------------------------------------------------------
+        Acer.add(new ComputerTypeData("Acer C27 27\" PC - Silver (Intel Core i5-1035G1/512GB SSD/12GB RAM/Windows 10)","Acer C27",
+                "$1,305.66","4.0(770)","27 Inch LCD","12GB DDR4 2666 MHz soDIMM","Windows 10 Home","Intel UHD Graphics",
+                "802.11ac/a/b/g/n","USB Traditional Black Keyboard - English","Black",
+                "512 GB SSD",R.drawable.acer1,R.drawable.star4));
+
+        Acer.add(new ComputerTypeData("Acer Chromebase 24 Ca24v2 All-in-one Computer - Core I7 I7-8550u - 4 Gb Ram - 128 Gb Ssd - 23.8\" 1920 X 1080 - Desktop - Chrome Os - Intel Uhd Graphic","Acer Chromebase 24 CA24V2 ",
+                "$1,452.99","3.8(110)","23.8\" 1920 x 1080","4GB DDR4 SDRAM","Chrome OS ","Intel UHD Graphics 620 ",
+                "\"802.11AC (1 X 1) + Bluetooth® 4.0","Black","Black",
+                "2TB HDD 5400RPM + 128GB SSD PCIe-NVMe",R.drawable.acer2,R.drawable.star4));
+       // ---------------------------------------Acer Laptop Data--------------------------------------------------------------
+
+        Acerlaptop.add(new ComputerTypeData("Acer Nitro 7 An715-51-752b 15.6\" Gaming Notebook - 1920 X 1080 - Core I7 I7-9750h - 16 Gb Ram - 512 Gb Ssd - Black - Windows 10 Home 64-bit - Nvidia G","Acer Nitro 7 AN715-51-752B",
+                "$1,590.06","4.6(356)","15.6\" Gaming Notebook - 1920 x 1080 "," 32GB DDR4 2666MHz","Windows 10 Home","NVIDIA GeForce GTX 1650",
+                "IEEE 802.11a/b/g/n/ac",
+                "Yes","Tocuh Pointing",
+                "512 GB PCIe SSD",R.drawable.acerlap1,R.drawable.star5));
+
+        Acerlaptop.add(new ComputerTypeData("Acer Swift 7 Sf714-51t-m9h0 Laptop 14\" Fhd I7 8gb 256gb Ssd 4g Lte"," SF714-51T-M9H0",
+                "$2,976.35","4.6(100)","14\" Fhd I7"," 8 GB ","Windows 10 Home","Intel HD Graphics 615",
+                "Intel® 9560 802.11AC vPro™ (2 x 2) & Bluetooth® 5.0","Yes","Touchpad",
+                "512 GB PCIe SSD",R.drawable.acerlap2,R.drawable.star5));
+
+
+
         // ----------------------------Apple Laptop Data-----------------------------------------------------------------------
 
         Applelaptop.add(new ComputerTypeData(
@@ -183,9 +212,11 @@ public class DesktopRepo {
     public void addhpdata(ComputerTypeData hp) { this.HP.add(hp); }
     public void addlenovodata(ComputerTypeData lenovo) { this.Lenovo.add(lenovo); }
     public void addlenovolaptopdata(ComputerTypeData lenovolaptop) { this.Lenovo.add(lenovolaptop); }
+    public void addacerdata(ComputerTypeData acer) { this.Acer.add(acer); }
+    public void addacerlaptopdata(ComputerTypeData acerlaptop) { this.Acerlaptop.add(acerlaptop); }
 
 
-//---------------------------------------Get Method----------------------------------------------------------------------
+    //---------------------------------------Get Method----------------------------------------------------------------------
     public List<ComputerTypeData> getDellData() {
         return this.dell;
     }
@@ -208,5 +239,9 @@ public class DesktopRepo {
         return this.Lenovo;
     }
     public List<ComputerTypeData> getLenovolaptopData() { return this.Lenovolaptop;}
+    public List<ComputerTypeData> getAcerData() {
+        return this.Acer;
+    }
+    public List<ComputerTypeData> getAcerlaptopData() { return this.Acerlaptop;}
 
 }

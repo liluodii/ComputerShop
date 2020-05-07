@@ -15,7 +15,7 @@ public class TypesRepo {
        customers.add(new types(R.drawable.delllogo,2));
        customers.add(new types(R.drawable.hplogo1,3));
        customers.add(new types(R.drawable.lenovologo,4));
-       customers.add(new types(R.drawable.asuslogo,5));
+       customers.add(new types(R.drawable.acerlogo,5));
        customers.add(new types(R.drawable.msilogo,6));
        customers.add(new types(R.drawable.micro,7));
        customers.add(new types(R.drawable.compaclogo,8));

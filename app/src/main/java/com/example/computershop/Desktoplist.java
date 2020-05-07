@@ -41,6 +41,11 @@ public class Desktoplist extends AppCompatActivity {
             LenovoAdapter lenovoAdapter= new LenovoAdapter(getApplicationContext());
             rvcomplist.setAdapter(lenovoAdapter);
         }
+        else if(imgid==R.drawable.acerlogo)
+        {
+            AcerAdapter acerAdapter= new AcerAdapter(getApplicationContext());
+            rvcomplist.setAdapter(acerAdapter);
+        }
     }
 
 }
