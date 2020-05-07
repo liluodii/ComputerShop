@@ -32,6 +32,11 @@ public class LaptopList extends AppCompatActivity {
             HpLaptopAdapter hpLaptopAdapter=new HpLaptopAdapter(getApplicationContext());
             rvcomplist.setAdapter(hpLaptopAdapter);
         }
+        else if(id==R.drawable.lenovologo)
+        {
+            LenovoLaptopAdapter lenovoLaptopAdapter=new LenovoLaptopAdapter(getApplicationContext());
+            rvcomplist.setAdapter(lenovoLaptopAdapter);
+        }
         else
         {
             AppleLaptopAdapter appleLaptopAdapter= new AppleLaptopAdapter(getApplicationContext());

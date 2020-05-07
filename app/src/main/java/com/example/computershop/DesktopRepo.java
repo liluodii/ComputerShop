@@ -9,10 +9,13 @@ public class DesktopRepo {
     private List<ComputerTypeData> dell = new ArrayList<>();
     private List<ComputerTypeData> Apple=new ArrayList<>();
     private List<ComputerTypeData> HP=new ArrayList<>();
+    private List<ComputerTypeData> Lenovo=new ArrayList<>();
     //---------------------------------------Laptop Array list--------------------------------------------------------------
     private List<ComputerTypeData> Applelaptop=new ArrayList<>();
     private List<ComputerTypeData> Delllaptop=new ArrayList<>();
     private List<ComputerTypeData> HPlaptop=new ArrayList<>();
+    private List<ComputerTypeData> Lenovolaptop=new ArrayList<>();
+
 
     private DesktopRepo() //constructor
     {
@@ -90,10 +93,27 @@ public class DesktopRepo {
                 "Intel® Wi-Fi 6 AX 201 (2x2) and Bluetooth® 5 Combo ","N/A","N/A",
                 "16 GB ",R.drawable.hplaptop2,R.drawable.star4));
 
+        //-----------------------------------Lenovo Desktop Data---------------------------------------------------------------
+        Lenovo.add(new ComputerTypeData("Lenovo ThinkCentre M820z All-in-One - 21.5\" - 500GB HDD - 4GB RAM","Lenovo ThinkCentre M820z",
+                "$1,169.66","4.7(70)","23.8\" FHD (1920 x 1080) IPS, touchscreen","12GB DDR4 2666MHz (4GB + 8GB DIMM)","Windows 10 Home","Intel UHD Graphics 630",
+                "Intel® 8265 802.11AC (2 x 2)","USB Traditional Black Keyboard - English","Black",
+                "500 GB 7200 RPM HDD",R.drawable.lenovo1,R.drawable.star5));
 
+        Lenovo.add(new ComputerTypeData("Lenovo IdeaCentre A540 - 23.8\" - AMD Ryzen 5 3400GE (3.30GHz) - 2TB HDD 5400RPM - 128GB SSD PCIe-NVMe - 12GB RAM","IdeaCentre A540 (24”, AMD) ",
+                "$655.49","3.8(100)","21.5 inch diagonal FHD IPS anti-glare WLED","12GB DDR4 2666MHz (4GB + 8GB DIMM)","Windows 10 Home","AAMD Radeon™ RX Vega 11 Graphics",
+                "\"802.11AC (1 X 1) + Bluetooth® 4.0","Wireless - French","Wireless Mouse",
+                "2TB HDD 5400RPM + 128GB SSD PCIe-NVMe",R.drawable.lenovo2,R.drawable.star4));
+        //---------------------------------------Lenovo Laptop Data-----------------------------------------------------------------------------
+        Lenovolaptop.add(new ComputerTypeData("Lenovo ThinkPad P1 Gen 2 - 15.6\" - Intel Core i9 Processor (2.30 GHz) - 512GB SSD - 16GB RAM","ThinkPad P1 Gen 2 (15”)",
+                "$3,959.00","4.0(10)","15.6\" UHD 4K (3840 x 2160) OLED, 400 nits, AR/AS, touchscreen Dolby Vision™ HDR 500","Up to 64GB DDR4 2666MHz","Windows 10 Home"," NVIDIA® Quadro® T1000 4GB",
+                "Intel® AX200 Wi-Fi 6 802.11AX (2 x 2) & Bluetooth® 5.1",
+                "Backlit - US English","N/A",
+                "512 GB PCIe SSD",R.drawable.lenovolap1,R.drawable.star4));
 
-
-
+        Lenovolaptop.add(new ComputerTypeData("Lenovo ThinkPad X1 Yoga Gen 4 Laptop - 14\" - Intel Core i7 Processor (1.90 GHz) - 512GB SSD - 16GB RAM","ThinkPad X1 Yoga Gen 4 ",
+                "$2,976.35","4.6(100)","14.0\" WQHD (2560 x 1440) IPS, anti-reflective, anti-smudge, touchscreen, 300 nits"," 16 GB LPDDR3 2133MHz (Soldered) ","Windows 10 Home","Integrated Intel® UHD Graphics 620",
+                "Intel® 9560 802.11AC vPro™ (2 x 2) & Bluetooth® 5.0","Backlit - US English","N/A",
+                "512 GB PCIe SSD",R.drawable.lenovolap2,R.drawable.star5));
 
         // ----------------------------Apple Laptop Data-----------------------------------------------------------------------
 
@@ -161,6 +181,9 @@ public class DesktopRepo {
     public void adddelllaptopdata(ComputerTypeData delllaptop) { this.Delllaptop.add(delllaptop); }
     public void addhplaptopdata(ComputerTypeData hplaptop) { this.HPlaptop.add(hplaptop); }
     public void addhpdata(ComputerTypeData hp) { this.HP.add(hp); }
+    public void addlenovodata(ComputerTypeData lenovo) { this.Lenovo.add(lenovo); }
+    public void addlenovolaptopdata(ComputerTypeData lenovolaptop) { this.Lenovo.add(lenovolaptop); }
+
 
 //---------------------------------------Get Method----------------------------------------------------------------------
     public List<ComputerTypeData> getDellData() {
@@ -181,5 +204,9 @@ public class DesktopRepo {
     public List<ComputerTypeData> getHPData() {
         return this.HP;
     }
+    public List<ComputerTypeData> getLenovoData() {
+        return this.Lenovo;
+    }
+    public List<ComputerTypeData> getLenovolaptopData() { return this.Lenovolaptop;}
 
 }
