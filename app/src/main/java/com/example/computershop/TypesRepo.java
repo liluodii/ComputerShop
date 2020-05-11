@@ -18,8 +18,7 @@ public class TypesRepo {
        customers.add(new types(R.drawable.acerlogo,5));
        customers.add(new types(R.drawable.msilogo,6));
        customers.add(new types(R.drawable.micro,7));
-       customers.add(new types(R.drawable.compaclogo,8));
-       customers.add(new types(R.drawable.sonylogo,9));
+       customers.add(new types(R.drawable.sonylogo,8));
 
     }
     public static TypesRepo getInstance() //Method

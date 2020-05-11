@@ -11,15 +11,20 @@ public class DesktopRepo {
     private List<ComputerTypeData> HP=new ArrayList<>();
     private List<ComputerTypeData> Lenovo=new ArrayList<>();
     private List<ComputerTypeData> Acer=new ArrayList<>();
+    private List<ComputerTypeData> Msi=new ArrayList<>();
+    private List<ComputerTypeData> Micro=new ArrayList<>();
+
+    private List<ComputerTypeData> Sony=new ArrayList<>();
     //---------------------------------------Laptop Array list--------------------------------------------------------------
     private List<ComputerTypeData> Applelaptop=new ArrayList<>();
     private List<ComputerTypeData> Delllaptop=new ArrayList<>();
     private List<ComputerTypeData> HPlaptop=new ArrayList<>();
     private List<ComputerTypeData> Lenovolaptop=new ArrayList<>();
     private List<ComputerTypeData> Acerlaptop=new ArrayList<>();
+    private List<ComputerTypeData> Msilaptop=new ArrayList<>();
+    private List<ComputerTypeData> Microlaptop=new ArrayList<>();
 
-
-
+    private List<ComputerTypeData> Sonylaptop=new ArrayList<>();
     private DesktopRepo() //constructor
     {
         dell.add(new ComputerTypeData("Dell Inspiron 22 3000 All-in-One Desktop w/ Intel Core - 1TB - Windows 10 Home - di223280_s105we","IInspiron 22 3000",
@@ -141,6 +146,78 @@ public class DesktopRepo {
                 "$2,976.35","4.6(100)","14\" Fhd I7"," 8 GB ","Windows 10 Home","Intel HD Graphics 615",
                 "Intel® 9560 802.11AC vPro™ (2 x 2) & Bluetooth® 5.0","Yes","Touchpad",
                 "512 GB PCIe SSD",R.drawable.acerlap2,R.drawable.star5));
+        //---------------------------------------MSI Desktop Data------------------------------------------------
+
+        Msi.add(new ComputerTypeData("Msi Pro 24x7m007xe 23.5 ́ ́ Pentium 4415u/4gb/1tb One Size","MSI Pro 24X7M007XE",
+                "$518.99","5.0(780)","23.5 1920 x 1080 Pixeles","4 GB DDR4","Windows 10 Home","Intel UHD Graphics",
+                "802.11ac/a/b/g/n","USB Traditional Black Keyboard - English","Black",
+                "1 TB",R.drawable.msi1,R.drawable.star5));
+
+        Msi.add(new ComputerTypeData("MSI Pro 24X7M008XE 19.5´´ i3-7100/4GB/128GB SSD","MSI Pro 24X7M008XE",
+                "$1,452.99","4.8(110)","23.5 inches 1920 x 1080 Pixeles","4GB DDR4","Windows 10 Home","Intel UHD Graphics 620 ",
+                "\"802.11AC (1 X 1) + Bluetooth® 4.0","Black","Black",
+                "1 TB",R.drawable.msi2,R.drawable.star5));
+    //-----------------------------------------------MSI LAaptop Data--------------------------------------------------------
+
+        Msilaptop.add(new ComputerTypeData("Msi Gl65 9sek-210xes 15.6 ́ ́ I7-9750h/16gb/512gb/gtx2060 Spanish QWERTY","MSI GL65 9SEK-210XES",
+                "$1655.49","4.6(37)","15.6\" 1920 x 1080 Pixeles"," 16 GB DDR4","Windows 10 Home","NVIDIA GeForce RTX 2060",
+                " IEEE 802.11ac",
+                "Yes","Tocuh Pointing",
+                "512 GB",R.drawable.msilap1,R.drawable.star5));
+
+        Msilaptop.add(new ComputerTypeData("Msi Prestige 14 A10sc-067xes 14 ́ ́ I7-10710u/16gb/1tb Ssd/gtx 1650 4gb Spanish QWERTY","MSI Prestige 14 A10SC-067XES",
+                "$1924.49","4.8(100)","14 ´´FHD (1920 * 1080), IPS-Level 60Hz 72% NTSC Thin Bezel, close to 100% sRGB","16GB DDR3 2133Mhz ","Windows 10 Home","GeForce® GTX 1650 MAX Q 4GB GDDR5 ",
+                "Intel Wi-Fi 6 AX201","Backlight keyboard","Touchpad",
+                "1TB NVMe PCIe Gen3x4 SSD",R.drawable.msilap2,R.drawable.star5));
+        //-------------------------------MicroSoft Desktop Data-----------------------------------------------------------
+
+        Micro.add(new ComputerTypeData("Surface Studio 2","-",
+                "$4,599.00","4.0(780)","637.35 mm x 438.90 mm x 12.50 mm","1TB or 2TB solid-state drive (SSD)","Windows 10 Home","NVIDIA® GeForce® GTX 1060 6GB GDDR5 memory (with i7/16/1TB configuration)",
+                "Wi-Fi: 802.11ac Wi-Fi wireless networking, IEEE 802.11 a/b/g/n ","N/a","N/a",
+                "16GB or 32GB (DDR4)",R.drawable.micro1,R.drawable.star4));
+
+        Micro.add(new ComputerTypeData("Surface Studio (Certified Refurbished)","-",
+                "$3,199.00","4.8(10)"," 28\" PixelSense Display","128GB SSD","Windows 10 Home",
+                "NVIDIA GeForce GTX 965M 2GB GPU GDDR5 memory",
+                "Wi-Fi: 802.11ac Wi-Fi wireless networking","yes","yes",
+                "1 TB",R.drawable.micro2,R.drawable.star5));
+    //-------------------------------------Microsoft Laptop Data---------------------------------------------
+        Microlaptop.add(new ComputerTypeData("Surface Laptop 3 for Business - 13.5 inch, Black (Metal), Intel Core i5, 8GB, 256GB","Surface Laptop 3",
+                "$1,879.00","4.6(377)","13.5” PixelSense™","8GB or 16GB RAM","Windows 10 Home","Intel® UHD Graphics 620 (i5)",
+                "Wi-Fi: IEEE 802.11 a/b/g/n/ac ",
+                "Yes","Tocuh Pointing",
+                "128GB, 256GB, 512GB, 1TB",R.drawable.microlaptop1,R.drawable.star5));
+
+        Microlaptop.add(new ComputerTypeData("Surface Laptop 2 - 256GB / Intel Core i7 / 8GB RAM (Platinum)","Surface Laptop 2 ",
+                "$1,999.00","3.8(100)","13.5” PixelSense™ ","16GB DDR3 2133Mhz ","Windows 10 Home","GeForce® GTX 1650 MAX Q 4GB GDDR5 ",
+                "Wi-Fi: IEEE 802.11 a/b/g/n/ac ","N/a","Touchpad",
+                "128GB, 256GB, 512GB, or 1TB",R.drawable.microlaptop2,R.drawable.star4));
+
+        //--------------------------------------Sony Desktop Data--------------------------------------------------
+
+        Sony.add(new ComputerTypeData("Sony VGC-LJ","VGC-LJ15G",
+                "$455.00","4.0(780)","5.4 (39.12 cm) Wide (WXGA 1280 x 800) TFT Colour display ","1TB or 2TB solid-state drive (SSD)","Windows 10 Home","251MBx7 (Graphics Memory),Mobile Intel Graphics Media Accelerator X3100",
+                "Wi-Fi: 802.11ac Wi-Fi wireless networking, IEEE 802.11 a/b/g/n ","Yes","Yes",
+                "160GB x 5(Serial ATA,5400rpm)",R.drawable.sony1,R.drawable.star4));
+
+        Sony.add(new ComputerTypeData("Sony Vaio VPCJ128FG-B Desktop","VPCJ128FG-B ",
+                "$500.00","4.8(101)","21.5 inches","4GB","Windows 10 Home",
+                " NVIDIA GeForce 310M GPU",
+                "Wi-Fi: 802.11ac Wi-Fi wireless networking","yes","yes",
+                "1 TB",R.drawable.sony2,R.drawable.star5));
+
+        //----------------------------------------Sony Laptop Data-----------------------------------------------------------
+
+        Sonylaptop.add(new ComputerTypeData("VAIO SX14 14\" 4K UHD Notebook, i7-10710U 1.1GHz, 16GB RAM, 1TB SSD, W10P, Brown","VAIO SX14",
+                "$2,946.41","4.6(37)","14 inch","16GB RAM","Windows 10 Home","4K UHD Notebook",
+                "Wi-Fi: IEEE 802.11 a/b/g/n/ac ",
+                "Yes","Tocuh Pointing",
+                "1TB SSD",R.drawable.sonylaptop1,R.drawable.star5));
+
+        Sonylaptop.add(new ComputerTypeData("VAIO SX12 12.5\" FHD Notebook, i7-10710U 1.1GHz, 16GB RAM, 1TB SSD, W10P, Red","SVAIO SX12",
+                "$2,217.54","3.8(1900)"," 12.5\" FHD Notebook","16GB RAM","Windows 10 Home","GeForce® GTX 1650 MAX Q 4GB GDDR5 ",
+                "Wi-Fi: IEEE 802.11 a/b/g/n/ac ","Yes","Yes",
+                "1TB SSD",R.drawable.sonylaptop2,R.drawable.star4));
 
 
 
@@ -214,8 +291,13 @@ public class DesktopRepo {
     public void addlenovolaptopdata(ComputerTypeData lenovolaptop) { this.Lenovo.add(lenovolaptop); }
     public void addacerdata(ComputerTypeData acer) { this.Acer.add(acer); }
     public void addacerlaptopdata(ComputerTypeData acerlaptop) { this.Acerlaptop.add(acerlaptop); }
+    public void addmsidata(ComputerTypeData msi) { this.Msi.add(msi); }
+    public void addmsilaptopdata(ComputerTypeData msilaptop) { this.Msilaptop.add(msilaptop); }
+    public void addmicrodata(ComputerTypeData micro) { this.Micro.add(micro); }
+    public void addmicrolaptopdata(ComputerTypeData microlaptop) { this.Microlaptop.add(microlaptop); }
 
-
+    public void addsonydata(ComputerTypeData sony) { this.Sony.add(sony); }
+    public void addsonylaptopdata(ComputerTypeData sonylaptop) { this.Sonylaptop.add(sonylaptop); }
     //---------------------------------------Get Method----------------------------------------------------------------------
     public List<ComputerTypeData> getDellData() {
         return this.dell;
@@ -243,5 +325,17 @@ public class DesktopRepo {
         return this.Acer;
     }
     public List<ComputerTypeData> getAcerlaptopData() { return this.Acerlaptop;}
+    public List<ComputerTypeData> getMsiData() {
+        return this.Msi;
+    }
+    public List<ComputerTypeData> getMsilaptopData() { return this.Msilaptop;}
+    public List<ComputerTypeData> getMicroData() {
+        return this.Micro;
+    }
+    public List<ComputerTypeData> getMicrolaptopData() { return this.Microlaptop;}
+    public List<ComputerTypeData> getSonyData() {
+        return this.Sony;
+    }
+    public List<ComputerTypeData> getSonylaptopData() { return this.Sonylaptop;}
 
 }

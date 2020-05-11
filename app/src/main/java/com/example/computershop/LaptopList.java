@@ -42,10 +42,20 @@ public class LaptopList extends AppCompatActivity {
             AcerLaptopAdapter acerLaptopAdapter=new AcerLaptopAdapter(getApplicationContext());
             rvcomplist.setAdapter(acerLaptopAdapter);
         }
-        else
+        else if(id==R.drawable.msilogo)
         {
-            AppleLaptopAdapter appleLaptopAdapter= new AppleLaptopAdapter(getApplicationContext());
-            rvcomplist.setAdapter(appleLaptopAdapter);
+            MsiLaptopAdapter msiLaptopAdapter=new MsiLaptopAdapter(getApplicationContext());
+            rvcomplist.setAdapter(msiLaptopAdapter);
+        }
+        else if(id==R.drawable.micro)
+        {
+            MicroLaptopAdapter microLaptopAdapter=new MicroLaptopAdapter(getApplicationContext());
+            rvcomplist.setAdapter(microLaptopAdapter);
+        }
+        else if(id==R.drawable.sonylogo)
+        {
+            SonyLaptopAdapter sonyLaptopAdapter=new SonyLaptopAdapter(getApplicationContext());
+            rvcomplist.setAdapter(sonyLaptopAdapter);
         }
     }
 

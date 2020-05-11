@@ -46,6 +46,21 @@ public class Desktoplist extends AppCompatActivity {
             AcerAdapter acerAdapter= new AcerAdapter(getApplicationContext());
             rvcomplist.setAdapter(acerAdapter);
         }
+        else if(imgid==R.drawable.msilogo)
+        {
+            MsiAdapter msiAdapter= new MsiAdapter(getApplicationContext());
+            rvcomplist.setAdapter(msiAdapter);
+        }
+        else if(imgid==R.drawable.micro)
+        {
+            MicrosoftAdapter microsoftAdapter= new MicrosoftAdapter(getApplicationContext());
+            rvcomplist.setAdapter(microsoftAdapter);
+        }
+        else if(imgid==R.drawable.sonylogo)
+        {
+            SonyAdapter sonyAdapter= new SonyAdapter(getApplicationContext());
+            rvcomplist.setAdapter(sonyAdapter);
+        }
     }
 
 }
